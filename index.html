@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .connect{
+            text-align: center;
+           
+        }
+        button{
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .mark1:hover~.contain img{
+            transform: rotate(45deg);       
+        }
+        .mark2:hover~.contain img{
+            transform: scaleY(5);
+        }
+        .mark3:hover~.contain img{
+            transform: skewX(80px);
+        }
+        .mark4:hover~.contain img{
+            transform: translateY(80px);
+        }
+        img{
+            padding-top: 50px;
+            width: 200px;
+            transition: all 2s;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="connect">
+<button class="mark1">rotate</button> 
+<button class="mark2">scale</button>
+<button class="mark3">skew</button>
+<button class="mark4">translate</button>
+<div class="contain">
+    <img src="/gg.jpg">
+</div>
+</div>
+</body>
+</html>
